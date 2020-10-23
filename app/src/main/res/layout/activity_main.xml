@@ -52,26 +52,46 @@
                 android:id="@+id/lLinear_home"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
                 android:orientation="vertical">
 
                 <include layout="@layout/layout_linha"
 
                     android:id="@+id/linha_home"/>
 
-                <Button
-                    android:id="@+id/btn_home"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:text="Home"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="18sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.102"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.093" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/home_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_home_24"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_home"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.102"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.093" />
+
+
+
+
+                </LinearLayout>
+
 
 
             </LinearLayout>
@@ -80,6 +100,7 @@
             <LinearLayout
                 android:id="@+id/lLinear_entradas"
                 android:layout_width="wrap_content"
+                android:layout_marginEnd="8dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
@@ -88,10 +109,23 @@
 
                     android:id="@+id/linha_entradas"/>
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/entradas_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_portinha"
+                        />
+
                 <Button
                     android:id="@+id/btn_entradas"
                     style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:layout_width="100dp"
+                    android:layout_width="88dp"
                     android:layout_height="wrap_content"
                     android:text="Entradas"
                     android:textColor="@color/colorWhite"
@@ -103,6 +137,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.093" />
 
+            </LinearLayout>
 
 
             </LinearLayout>
@@ -117,14 +152,29 @@
 
                     android:id="@+id/linha_gastos"/>
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/money_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_attach_money_24"
+                        />
+
+
+
                 <Button
                     android:id="@+id/btn_gastos"
                     style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:layout_width="100dp"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:text="Gastos"
                     android:textColor="@color/colorWhite"
-                    android:textSize="18sp"
+                    android:textSize="19sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.88"
@@ -132,6 +182,8 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.093" />
 
+
+                </LinearLayout>
 
             </LinearLayout>
 

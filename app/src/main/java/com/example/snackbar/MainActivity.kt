@@ -26,9 +26,12 @@ class MainActivity : AppCompatActivity() {
         //Toast.makeText(this, "Olá ${usuario?.username}", Toast.LENGTH_SHORT).show()
 
 
+
+
         val fragment = HomeFragment.newInstance()
         btn_home.setTextColor(getColor(R.color.colordetail))
         linha_home.setBackgroundTintList(ColorStateList.valueOf(resources.getColor(R.color.colordetail)))
+        home_color.setImageTintList(ColorStateList.valueOf(resources.getColor(R.color.colordetail)))
 
 
         supportFragmentManager.beginTransaction().apply {
@@ -40,12 +43,15 @@ class MainActivity : AppCompatActivity() {
 
             btn_home.setTextColor(getColor(R.color.colordetail))
             linha_home.setBackgroundTintList(ColorStateList.valueOf(resources.getColor(R.color.colordetail)))
+            home_color.setImageTintList(ColorStateList.valueOf(resources.getColor(R.color.colordetail)))
 
             btn_entradas.setTextColor(getColor(R.color.colorWhite))
             linha_entradas.setBackgroundTintList(ColorStateList.valueOf(resources.getColor(R.color.colorWhite)))
+            entradas_color.setImageTintList(ColorStateList.valueOf(resources.getColor(R.color.colorWhite)))
 
             btn_gastos.setTextColor(getColor(R.color.colorWhite))
             linha_gastos.setBackgroundTintList(ColorStateList.valueOf(resources.getColor(R.color.colorWhite)))
+            money_color.setImageTintList(ColorStateList.valueOf(resources.getColor(R.color.colorWhite)))
 
             supportFragmentManager.beginTransaction().apply {
                 replace(R.id.flFragment, fragment)
@@ -60,12 +66,15 @@ class MainActivity : AppCompatActivity() {
 
             btn_gastos.setTextColor(getColor(R.color.colordetail))
             linha_gastos.setBackgroundTintList(ColorStateList.valueOf(resources.getColor(R.color.colordetail)))
+            money_color.setImageTintList(ColorStateList.valueOf(resources.getColor(R.color.colordetail)))
 
             btn_home.setTextColor(getColor(R.color.colorWhite))
             linha_home.setBackgroundTintList(ColorStateList.valueOf(resources.getColor(R.color.colorWhite)))
+            home_color.setImageTintList(ColorStateList.valueOf(resources.getColor(R.color.colorWhite)))
 
             btn_entradas.setTextColor(getColor(R.color.colorWhite))
             linha_entradas.setBackgroundTintList(ColorStateList.valueOf(resources.getColor(R.color.colorWhite)))
+            entradas_color.setImageTintList(ColorStateList.valueOf(resources.getColor(R.color.colorWhite)))
 
             supportFragmentManager.beginTransaction().apply {
                 replace(R.id.flFragment, fragment2)
@@ -80,12 +89,15 @@ class MainActivity : AppCompatActivity() {
 
             btn_entradas.setTextColor(getColor(R.color.colordetail))
             linha_entradas.setBackgroundTintList(ColorStateList.valueOf(resources.getColor(R.color.colordetail)))
+            entradas_color.setImageTintList(ColorStateList.valueOf(resources.getColor(R.color.colordetail)))
 
             btn_home.setTextColor(getColor(R.color.colorWhite))
             linha_home.setBackgroundTintList(ColorStateList.valueOf(resources.getColor(R.color.colorWhite)))
+            home_color.setImageTintList(ColorStateList.valueOf(resources.getColor(R.color.colorWhite)))
 
             btn_gastos.setTextColor(getColor(R.color.colorWhite))
             linha_gastos.setBackgroundTintList(ColorStateList.valueOf(resources.getColor(R.color.colorWhite)))
+            money_color.setImageTintList(ColorStateList.valueOf(resources.getColor(R.color.colorWhite)))
 
             supportFragmentManager.beginTransaction().apply {
                 replace(R.id.flFragment, fragment3)
