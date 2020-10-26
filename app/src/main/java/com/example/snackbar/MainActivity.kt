@@ -3,18 +3,15 @@ package com.example.snackbar
 import android.content.res.ColorStateList
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.LayoutInflater
 import android.view.Menu
-import android.view.MenuInflater
-import android.view.View
-import android.widget.Toast
-import com.example.snackbar.domain.Usuario
-import com.google.android.material.snackbar.Snackbar
+import com.example.snackbar.`interface`.ContractMainActivity
+import com.example.snackbar.ui.DetailGastosFragment
+import com.example.snackbar.ui.EntradasFragment
+import com.example.snackbar.ui.GastosFragment
+import com.example.snackbar.ui.HomeFragment
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.layout_linha.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), ContractMainActivity {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,8 +21,6 @@ class MainActivity : AppCompatActivity() {
 
         // var usuario: Usuario? = intent.getSerializableExtra("1") as? Usuario
         //Toast.makeText(this, "Olá ${usuario?.username}", Toast.LENGTH_SHORT).show()
-
-
 
 
         val fragment = HomeFragment.newInstance()
@@ -108,8 +103,21 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.toolbar_main, menu)
         return true
     }
+
+    override fun callFragDetail() {
+        val fragment4 = DetailGastosFragment.newInstance("Detalhes Gasto")
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.flFragment2, fragment4)
+            addToBackStack(null)
+            commit()
+        }
+    }
+
+
 }

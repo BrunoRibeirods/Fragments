@@ -66,6 +66,7 @@
 
                     <ImageView
                         android:id="@+id/home_color"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -170,11 +171,11 @@
                 <Button
                     android:id="@+id/btn_gastos"
                     style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:layout_width="80dp"
+                    android:layout_width="75dp"
                     android:layout_height="wrap_content"
                     android:text="Gastos"
                     android:textColor="@color/colorWhite"
-                    android:textSize="19sp"
+                    android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.88"
@@ -190,6 +191,18 @@
 
 
         </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/flFragment2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="0dp">
+
+        </FrameLayout>
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

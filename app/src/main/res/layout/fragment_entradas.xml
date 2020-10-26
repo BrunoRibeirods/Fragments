@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorWhite"
     android:layout_height="match_parent"
-    tools:context=".EntradasFragment">
+    tools:context=".ui.EntradasFragment">
 
 
     <TextView
